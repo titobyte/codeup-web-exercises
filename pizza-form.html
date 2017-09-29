@@ -8,55 +8,42 @@
 
     <form method="POST" action="#">
 
-        <h2>Register with Us!</h2>
-        <label for="email">Email:</label>
-        <input id="email" name="email" type="text">
-
-
-        <label for="password">Password:</label>
-        <input id="password" name="password" type="password">
-
-
-        <br>
-        <br>
-
-        <label for="userBio"></label>
-        <textarea name="bio" id="userBio" cols="30" rows="10" placeholder="Describe yourself"></textarea>
+        <h2>Customize your order</h2>
 
         <fieldset>
 
-            <legend>How did you hear about us?</legend>
+            <legend>Toppings</legend>
 
-            <label for="billboard">billboard
-                <input id="billboard"  type="radio" name="advertisement" value="billboard">
-            </label>
-    
-            <label for="radioAdvertisement">radio advertisement
-                <input id="radioAdvertisement" type="radio" name="advertisement" value="radio advertisement">
+            <label for="extraCheese">Cheese
+                <input id="extraCheese"  type="checkbox" name="toppings" value="cheese">
             </label>
 
-            <label for="internetAdvertisement">internet advertisement
-                <input id="internetAdvertisement" type="radio" name="advertisement" value="internet advertisement">
+            <label for="sausage">Sausage
+                <input id="sausage" type="checkbox" name="toppings" value="sausage">
             </label>
 
-            <label for="other">other
-                <input id="other" type="radio" name="advertisement" value="other">
+            <label for="internetAdvertisement">pepperoni
+                <input id="internetAdvertisement" type="checkbox" name="toppings" value="pepperoni">
+            </label>
+
+            <label for="other">Black olives
+                <input id="other" type="checkbox" name="toppings" value="black olives">
             </label>
 
         </fieldset>
 
 
-        <h2>What browser are you using?</h2>
-        <select name="browsers">
-            <option value="firefox">Firefox</option>
-            <option value="chrome">Chrome</option>
-            <option value="safari">Safari</option>
+        <h2>What Crust would you prefer?</h2>
+        <select name="crust">
+            <option value="thick">Thick</option>
+            <option value="thin">Thin</option>
+            <option value="cheese">Cheese</option>
         </select>
 
         <br>
         <br>
 
-        <button type="submit">Submit your answers</button>
+        <button type="submit">Submit your order</button>
     </form>
 
 </body>
