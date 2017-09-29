@@ -1,8 +1,39 @@
-/*
-multi
-line
-comment
-*/
+body {
+    background: grey url(https://www.fillmurray.com/g/600/600) no-repeat center;
+    font-family: AppleGothic, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    color: darkorchid;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: circle;
+}
+
+td, tr {
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+a:link {
+    color: chocolate;
+}
+a:visited{
+    color: #bada55;
+}
+a:hover {
+    color: #000;
+}
+a:active {
+    color:plum;
+}
+
 
 .fancy-header {
     color: purple; /* single line comment */
