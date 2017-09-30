@@ -36,6 +36,7 @@ nav {
 
     body {
         width: 900px;
+        height: 100%;
     }
     .hidden-on-mobile {
         display: none;
@@ -72,8 +73,10 @@ nav {
         width: 30%;
         float: right;
     }
+
     footer {
         clear: both;
+
     }
 
 }
