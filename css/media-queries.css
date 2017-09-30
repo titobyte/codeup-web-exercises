@@ -1,5 +1,79 @@
-/* Phone */
+/* Global */
 
-@media screen and(min-width: 768px) {
+h1 {
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+
+nav {
+
+    width: 200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hidden-on-mobile {
+    text-align: center;
+}
+
+.header-img img {
+    display: block;
+    margin: 0 auto;
+    width: 339px;
+    height: 224px;
+}
+#social-media-links {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: block;
+}
+
+/* Desktop */
+@media screen and (min-width:1200px){
+
+    body {
+        width: 900px;
+    }
+    .hidden-on-mobile {
+        display: none;
+    }
+
+    nav {
+        float: right;
+        width: 900px;
+        height: 50px;
+
+    }
+
+    h1 {
+        float: left;
+
+    }
+    li {
+        float: right;
+        margin-right: 20px;
+        position: relative;
+        bottom:50px;
+
+    }
+    .header-img img {
+        width: 890px;
+        height: 385px;
+    }
+
+    .main {
+        width: 60%;
+        float: left;
+    }
+    .sub-section {
+        width: 30%;
+        float: right;
+    }
+    footer {
+        clear: both;
+    }
 
 }
