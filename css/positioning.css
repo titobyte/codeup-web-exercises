@@ -1,53 +1,57 @@
-.main-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-}
-div {
+.box {
     border: 1px black solid;
     width:  50px;
     height: 50px;
-    margin: 10px 10px;
-
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-size: 15px;
+    float: left;
+    position: relative;
 }
 
 p {
     font-weight: bold;
     color: #fff;
 }
+.box>img {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+}
 
-.red {
+#box-red {
     background-color: red;
     margin:50px;
 
 }
 
-.orange {
+#box-orange {
     background-color: orange;
     margin:50px;
 
 
 }
 
-.yellow {
+#box-yellow {
     background-color: yellow;
     margin:50px;
 
 
 }
 
-.green {
+#box-green {
     background-color: green;
     margin:50px;
+    clear:left;
 }
 
-.blue {
+#box-blue {
     background-color: blue;
     margin:50px;
 }
 
-.pink {
+#box-pink {
     background-color: pink;
     margin:50px;
 }
