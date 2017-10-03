@@ -42,15 +42,216 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-<!-- jumbotron -->
+    <!-- jumbotron -->
 
-<div class="jumbotron hidden-xs">
-    <div class="container">
-        <h1>Welcome to Pizza World!</h1>
+    <div class="jumbotron hidden-xs">
+        <div class="container">
+            <h1>Welcome to Pizza World!</h1>
+        </div>
     </div>
-</div>
 
-    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- crust tabs -->
+    <h2>Build your own pizza!</h2>
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#"><span class="badge">1</span> Home</a></li>
+        <li role="presentation"><a href="#"><span class="badge">2</span> Profile</a></li>
+        <li role="presentation"><a href="#"><span class="badge">3</span> Messages</a></li>
+    </ul>
+
+    <!-- Main panel with heading -->
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Choose size and crust</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Hand tossed</div>
+                <div class="panel-body">
+                    <p>Garlic-seasoned crust with a rich, buttery taste.</p>
+                </div>
+
+                <!-- List pizza group -->
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-info">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                                Small (10")
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-info">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                Medium (12")
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="panel panel-default">
+                <!-- Panel contents -->
+                <div class="panel-heading">Crunchy thin crust</div>
+                <div class="panel-body">
+                    <p>Thin enough for the optimum crispy to crunchy ratio.</p>
+                </div>
+
+                <!-- List pizza group -->
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-info">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1">
+                                Medium (12")
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-info">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option2">
+                                Large (14")
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div> <!-- end of first group -->
+            <div class="panel-footer">
+                <button type="button" class="btn btn-primary step-button">Next Step
+                    <span class="glyphicon glyphicon-chevron-right text-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- Second panel / Cheese & Sauces -->
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Choose cheese & sauce</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <!-- cheese panel contents -->
+                <div class="panel-heading">Cheese?</div>
+                <div class="panel-body">
+                    <p>Cheese</p>
+                    <!-- select cheese group -->
+                    <select class="form-control">
+                        <option>Light</option>
+                        <option>Normal</option>
+                        <option>Extra</option>
+                        <option>Double</option>
+                    </select>
+                </div>
+                <!-- Sauce panel contents -->
+                <div class="panel-heading">Sauces?</div>
+                <div class="panel-body">
+                    <!--  Sauce  group -->
+                    <p>Sauce</p>
+                    <select class="form-control">
+                        <option>Tomato sauce</option>
+                        <option>Marinara sauce</option>
+                        <option>BBQ Sauce</option>
+                        <option>Alfredo Sauce</option>
+                    </select>
+
+                    <p>How much?</p>
+
+                    <select class="form-control">
+                        <option>Light</option>
+                        <option>Normal</option>
+                        <option>Extra</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="panel-footer">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-primary">Left</button>
+                    <button type="button" class="btn btn-primary">Right</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Panel / Meat options -->
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Choose Toppings</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <!-- meat checkbox contents -->
+                <div class="panel-heading">Choose meats</div>
+                <div class="panel-body">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="1">
+                            Beef
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="2">
+                            Ham
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="3">
+                            Philly Steak
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="4">
+                            Bacon
+                        </label>
+                    </div>
+                </div>
+                <!-- non-meat panel contents -->
+                <div class="panel-heading">Choose non-meats</div>
+                <div class="panel-body">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="1">
+                            Green Peppers
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="2">
+                            Mushrooms
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="3">
+                             Onions
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="4">
+                            Jalapeno Peppers
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-footer">
+                <button type="button" class="btn btn-primary step-button">Checkout
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
 </html>
