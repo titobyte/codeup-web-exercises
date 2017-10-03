@@ -55,7 +55,7 @@ table {
 .primary-nav {
     background-color: #ffd230;
     position: relative;
-    border-top: 1px solid black;
+    border-top: 1px solid rgba(18,18,18,0.2);
     line-height: 0;
     position: relative;
     display: block;
@@ -74,7 +74,7 @@ table {
 .primary-nav-items {
     height: 32px;
     display: block;
-    /*overflow: hidden;*/
+    overflow: hidden;
     margin-left: -8px;
 }
 
@@ -82,8 +82,7 @@ table {
 
     display: block;
     float: left;
-    padding: 10px;
-
+    padding: 5px;
 }
 .primary-nav-link {
     color: black;
