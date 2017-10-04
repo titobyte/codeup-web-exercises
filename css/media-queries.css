@@ -91,8 +91,10 @@ nav {
         height: 100%;
     }
     .container h1 {
-        
+        margin-left: 0;
         float: left;
+        position: relative;
+        right: 17%;
     }
     .hidden-on-mobile {
         display: none;
@@ -108,6 +110,10 @@ nav {
     h1 {
         float: left;
 
+    }
+    ul {
+        position: relative;
+        left: 17%;
     }
     li {
         float: right;

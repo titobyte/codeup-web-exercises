@@ -59,6 +59,7 @@
     </ul>
 
     <!-- Main panel with heading -->
+<div class="panel">
     <div class="panel panel-info">
         <div class="panel-heading">
             <h3 class="panel-title">Choose size and crust</h3>
@@ -103,7 +104,7 @@
                 <ul class="list-group">
                     <li class="list-group-item list-group-item-info">
                         <div class="radio">
-                            <label>
+                            <label for="optionsRadios3">
                                 <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1">
                                 Medium (12")
                             </label>
@@ -111,7 +112,7 @@
                     </li>
                     <li class="list-group-item list-group-item-info">
                         <div class="radio">
-                            <label>
+                            <label  for="optionsRadios4">
                                 <input type="radio" name="optionsRadios" id="optionsRadios4" value="option2">
                                 Large (14")
                             </label>
@@ -119,7 +120,7 @@
                     </li>
                 </ul>
             </div> <!-- end of first group -->
-            <div class="panel-footer">
+            <div class="panel-footer text-right">
                 <button type="button" class="btn btn-primary step-button">Next Step
                     <span class="glyphicon glyphicon-chevron-right text-right"></span>
                 </button>
@@ -135,17 +136,22 @@
         <div class="panel-body">
             <div class="panel panel-default">
                 <!-- cheese panel contents -->
-                <div class="panel-heading">Cheese?</div>
-                <div class="panel-body">
-                    <p>Cheese</p>
-                    <!-- select cheese group -->
-                    <select class="form-control">
-                        <option>Light</option>
-                        <option>Normal</option>
-                        <option>Extra</option>
-                        <option>Double</option>
-                    </select>
-                </div>
+                    <div class="panel-heading">Cheese?</div>
+                        <div class="panel-body list-group">
+
+                            <span class="list-group-item list-group-item-info">
+                                    <p>Cheese</p>
+                                    <!-- select cheese group -->
+                                    <select class="form-control">
+                                        <option>Light</option>
+                                        <option>Normal</option>
+                                        <option>Extra</option>
+                                        <option>Double</option>
+                                    </select>
+
+                            </span>
+                        </div>
+
                 <!-- Sauce panel contents -->
                 <div class="panel-heading">Sauces?</div>
                 <div class="panel-body">
@@ -157,9 +163,8 @@
                         <option>BBQ Sauce</option>
                         <option>Alfredo Sauce</option>
                     </select>
-
+                    <br>
                     <p>How much?</p>
-
                     <select class="form-control">
                         <option>Light</option>
                         <option>Normal</option>
@@ -168,10 +173,13 @@
                 </div>
             </div>
 
-            <div class="panel-footer">
+            <div class="panel-footer text-right">
                 <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-primary">Left</button>
-                    <button type="button" class="btn btn-primary">Right</button>
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Left
+                    </button>
+                    <button type="button" class="btn btn-primary">Right
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -187,68 +195,90 @@
                 <!-- meat checkbox contents -->
                 <div class="panel-heading">Choose meats</div>
                 <div class="panel-body">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="1">
-                            Beef
-                        </label>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="1">
+                                    Beef
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-info">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="2">
+                                    Ham
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-info">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="3">
+                                    Philly Steak
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-info">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="4">
+                                    Bacon
+                                </label>
+                            </div>
+                        </li>
+
                     </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="2">
-                            Ham
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="3">
-                            Philly Steak
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="4">
-                            Bacon
-                        </label>
-                    </div>
-                </div>
+                </ul>
                 <!-- non-meat panel contents -->
                 <div class="panel-heading">Choose non-meats</div>
                 <div class="panel-body">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="1">
-                            Green Peppers
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="2">
-                            Mushrooms
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="3">
-                             Onions
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="4">
-                            Jalapeno Peppers
-                        </label>
-                    </div>
+                    <li class="list-group-item list-group-item-info">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="1">
+                                Green Peppers
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-info">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="2">
+                                Mushrooms
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-info">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="3">
+                                 Onions
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-info">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="4">
+                                Jalapeno Peppers
+                            </label>
+                        </div>
+                    </li>
                 </div>
             </div>
 
-            <div class="panel-footer">
+            <div class="panel-footer text-right">
                 <button type="button" class="btn btn-primary step-button">Checkout
                     <span class="glyphicon glyphicon-shopping-cart"></span>
                 </button>
+
             </div>
+
         </div>
     </div>
+</div>
 
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
