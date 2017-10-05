@@ -1,0 +1,31 @@
+/* Global Styling */
+@import url('https://fonts.googleapis.com/css?family=Abel|Anton');
+
+body {
+    background-color: #e6e6e6;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Abel', sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: inline;
+    float: left;
+}
+li {
+    display: inline;
+    padding: 15px;
+}
+.background-header {
+    background-color: white;
+    width: 100%;
+
+}
+.logo {
+    height:105px;
+    width: 105px;
+    display: block;
+    margin: 30px auto 0;
+
+}
+
