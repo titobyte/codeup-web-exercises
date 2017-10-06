@@ -197,5 +197,9 @@ a {
         margin: 0 auto;
     }
 
+    .break {
+        border: 1px solid grey;
+        width: 75%;
+    }
 
 }
