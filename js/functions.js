@@ -13,7 +13,7 @@ function sayHello(name){
     return  'Hello, ' + name;
 }
 
-sayHello();
+console.log(sayHello("Tito"));
 
 
 /**
@@ -38,7 +38,7 @@ console.log(helloMessage);
 
 var myName = "Tito";
 
-sayHello(myName);
+console.log(sayHello(myName));
 
 
 
@@ -64,6 +64,8 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 
+console.log(random);
+
 function isTwo(aNumber) {
     if (aNumber === 2) {
         return true;
@@ -72,9 +74,9 @@ function isTwo(aNumber) {
     }
 }
 
-isTwo(random);
+var retval = isTwo(random);
 
-console.log(isTwo());
+console.log(retval);
 
 /**
  * TODO:
@@ -86,9 +88,45 @@ console.log(isTwo());
  * > calculateTip(0.20, 20) // returns 4
  */
 
+
+function calculateTip (num, per) {
+    return (num/100)*per;
+}
+
+
+console.log(calculateTip(20, 15));
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+
+
+
+var userInputBill = prompt('How much was your bill?');
+var userInputTip = prompt('what percentage tip would you like to leave?');
+
+
+
+alert('Ok, ' + calculateTip(userInputBill, userInputTip)+ ' should be your tip');
+
+// Basic function writing practice:
+
+// 1) Make a function called returnTwo() that returns the number 2 when called
+// ---Test this function with console.log(returnTwo())
+//
+//     2) Make a function called returnName() that returns the string of your name
+// ---Test this function with console.log(returnName())
+//
+//     3) Make a function called addThree() which takes in a number input and returns the number plus 3. Remember to define a parameter.
+// ---Test this function with console.log(addThree(5))
+//
+//     4) Make a function called sayString() which returns the string input passed in.
+// ---Test this function with console.log(sayString())
+//
+//     5) Make a function called sayHowdy() which console.logs the string “Howdy!”
+//     ---Test this function by directly calling sayHowdy()
+// ---Remember this function does not need a defined return value
+
