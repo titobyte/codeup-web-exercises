@@ -10,7 +10,7 @@
  */
 
 function sayHello(name){
-    return  'Hello, ' + name;
+    return  'Hello, ' + name + "!";
 }
 
 console.log(sayHello("Tito"));
@@ -110,7 +110,7 @@ var userInputTip = prompt('what percentage tip would you like to leave?');
 
 
 
-alert('Ok, ' + calculateTip(userInputBill, userInputTip)+ ' should be your tip');
+alert('Ok, ' + calculateTip(userInputBill, userInputTip) + ' should be your tip');
 
 // Basic function writing practice:
 
@@ -123,7 +123,7 @@ alert('Ok, ' + calculateTip(userInputBill, userInputTip)+ ' should be your tip')
 
     console.log(returnTwo());
 
-//
+//  
 //     2) Make a function called returnName() that returns the string of your name
 // ---Test this function with console.log(returnName())
 

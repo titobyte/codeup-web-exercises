@@ -18,7 +18,23 @@
 
 /* ########################################################################## */
 
-    window.confirm("Would you like to enter a number?");
+    if (window.confirm("Would you like to enter a number?")) {
+
+        prompt("Can you enter a number?");
+
+    }   else if (alert('that number is even')) {
+
+    }   else if (alert('that number is odd')) {
+
+    }
+
+
+
+
+
+    else  {
+        alert("Bye!");
+    }
 
 
 /**
