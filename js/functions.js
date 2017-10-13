@@ -1,4 +1,8 @@
+(function(){
+
 "use strict";
+
+
 
 /**
  * TODO:
@@ -123,7 +127,7 @@ alert('Ok, ' + calculateTip(userInputBill, userInputTip) + ' should be your tip'
 
     console.log(returnTwo());
 
-//  
+//
 //     2) Make a function called returnName() that returns the string of your name
 // ---Test this function with console.log(returnName())
 
@@ -308,4 +312,4 @@ function isNumeric(input) {
                 break;
         }
 
-    }
+    }})();
