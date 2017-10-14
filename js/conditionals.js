@@ -32,9 +32,10 @@
         return parseInt(num) + 100;
     }
 
-    function numPosOrNeg(num){
-        return num >= 0;
+    function isNegative(num){
+        return num < 0;
     }
+
 
     function notNum(num) {
         if (isNaN(num)) {
@@ -50,7 +51,7 @@
         var numPlaceholder = prompt("Can you enter a number?");
         alert("That number is " + isEven(numPlaceholder));
         alert("Plus one hundred " + pHundred(numPlaceholder));
-        alert("that number is " + numPosOrNeg(numPlaceholder));
+        alert("that number is " + isNegative(numPlaceholder));
         notNum(numPlaceholder);
 
         } else {
