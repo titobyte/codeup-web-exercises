@@ -139,8 +139,11 @@ function analyzeColorSwitch() {
         case "indigo":
             return "indigo is werid";
             break;
+        case "violet":
+            return "violet is my favorite color";
+            break;
         default:
-            return"violet is my favorite color";
+            return"Not sure about that color";
             break;
     }
 }
