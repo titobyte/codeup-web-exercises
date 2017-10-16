@@ -70,7 +70,7 @@
     //     }
     // }
     //
-    // alert(dayMessage(favoriteDay));
+    // alert(dayMessage(favoriteDay))
 
 // Bonus 2
 
@@ -86,7 +86,7 @@ var number = parseInt(prompt('Enter a number'));
     }
 
 
-    notNum(number);
+    notNum(number)
 
 // Bonus 3
 
