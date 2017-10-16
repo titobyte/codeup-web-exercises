@@ -91,8 +91,10 @@
             return "the grass is green";
         } else  if (colorStr === 'indigo') {
             return "indigo is weird";
-        }   else {
+        } else if (colorStr === "violet"){
             return "violet is my favorite color";
+        } else {
+            return "Not sure about that color";
         }
     }
     console.log(analyzeColor());
