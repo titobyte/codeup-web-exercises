@@ -2,61 +2,46 @@
 
 
 // For loop exercises
-//
-// function showMultiplicationTable() {
-//
-// }
-//
-// function showMultiplicationTable() {
-//
-// }
-//
-// function showMultiplicationTable() {
-//
-// }
-// function showMultiplicationTable() {
-//
-// }
-// function showMultiplicationTable() {
-//
-// }
-// function showMultiplicationTable() {
-//
-// }
-//
-// function showMultiplicationTable(num) {
-//
-//
-//    if (num === 7) {
-//        console.log('7 x 1 = 7\n' +
-//            '7 x 2 = 14\n' +
-//            '7 x 3 = 21\n' +
-//            '7 x 4 = 28\n' +
-//            '7 x 5 = 35\n' +
-//            '7 x 6 = 42\n' +
-//            '7 x 7 = 49\n' +
-//            '7 x 8 = 56\n' +
-//            '7 x 9 = 63\n' +
-//            '7 x 10 = 70');
-//
-//    }
-//
-// }
-//
-// showMultiplicationTable();
-//
-// function showMultiplicationTable() {
-//
-// }
-//
-// function showMultiplicationTable() {
-//
-// }
-//
-// function showMultiplicationTable() {
-//
-// }
-//
+
+
+
+
+
+
+
+
+
+//Exercise number 3
+
+var random = Math.floor(Math.random()*200);
+
+for (var i = 1; i < 10; i++) {
+
+    var numRow = "";
+
+    if (i % 2 === 0) {
+
+        console.log('odd');
+
+
+      }   else  {
+
+        console.log('even');
+
+    }
+
+    console.log(numRow + random);
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -67,21 +52,21 @@
 
 //Exercise number 4
 
-for (var i = 1; i <= 9; i++) {
-
-    var numLog = "";
-
-
-    for (var j = 1; j <= i; j++){
-
-        numLog += i;
-
-    }
-
-    console.log(numLog);
-
-}
-
+// for (var i = 1; i <= 9; i++) {
+//
+//     var numLog = "";
+//
+//
+//     for (var j = 1; j <= i; j++){
+//
+//         numLog += i;
+//
+//     }
+//
+//     console.log(numLog);
+//
+// }
+//
 
 
 
