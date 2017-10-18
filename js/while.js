@@ -14,40 +14,24 @@ function basicWhileLoop() {
 // console.log(basicWhileLoop());
 
 
-// Ice cream loop
+// // Ice cream loop
 // This is how you get a random number between 50 and 100
-var allCones = Math.floor(Math.random() * 50) + 50;
-// This expression will generate a random number between 1 and 5
-// var randomCone = Math.floor(Math.random() * 5) + 1;
-//
-//  var coneVal = function conesSold() {
-//
-//         var i = 1;
-//
-//         do  {
-//             console.log(allCones);
-//             console.log(randomCone);
-//             i++;
-//
-//         } while (i < 1);
+// var allCones = Math.floor(Math.random() * 50) + 50;
+// // This expression will generate a random number between 1 and 5
 //
 //
+//     do {
+//         var conesOrdered = Math.floor(Math.random() * 5) + 1;
 //
-//      if (randomCone === 1) {
-//          return "one cone sold";
-//      } else if (randomCone === 2){
-//          return "two cones sold";
-//      }  else if (randomCone === 3) {
-//          return "three cones sold";
-//      }
-//
-//
-//
-//  }
+//         if (conesOrdered <= allCones) {
+//             console.log('the customer ordered ' + conesOrdered + " number of cones");
+//             allCones = allCones - conesOrdered;
+//             console.log('I sold ' + conesOrdered + " number of cones.")
+//         } else {
+//             console.log('next customer, please.');
+//         }
 //
 //
+//     }   while (allCones > 0);
 //
-//
-//
-// coneVal();
-//
+//     console.log("yay, i get to go home b/c I sold all my cones.");

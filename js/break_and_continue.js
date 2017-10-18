@@ -23,9 +23,4 @@
 //             break;
 //         }
 //     }
-
-// if (oddPrompt === isNaN) {
-//     continue;
-//     alert('Please enter a valid odd number between 1 and 50');
 //
-// }

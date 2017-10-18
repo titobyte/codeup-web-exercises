@@ -3,50 +3,38 @@
 
 // For loop exercises
 
-
-
-
-
-
-
+// function showMultiplicationTable(num) {
+//
+//     for(var i = 1; i <= 10; i += 1){
+//         console.log(num + " x " + i + " = " +(num * i));
+//     }
+//
+//
+// }
+//
+//
+// showMultiplicationTable(1);
+// showMultiplicationTable(2);
+// showMultiplicationTable(7);
+//
 
 
 //Exercise number 3
 
-var random = Math.floor(Math.random()*200);
 
 for (var i = 1; i < 10; i++) {
 
-    var numRow = "";
+    var randomNumber = Math.floor(Math.random() * 180) + 20;
 
-    if (i % 2 === 0) {
-
-        console.log('odd');
-
-
-      }   else  {
-
-        console.log('even');
-
+    if (randomNumber % 2 == 0) {
+        console.log(randomNumber + " is even");
+    } else {
+        console.log(randomNumber + " is odd.");
     }
 
-    console.log(numRow + random);
+
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
