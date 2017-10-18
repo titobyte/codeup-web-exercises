@@ -38,6 +38,22 @@ for (var i = 1; i < 10; i++) {
 
 
 
+
+
+/*
+
+for(var i = 1; i <= 9; i += 1) {
+
+    var numberStr = i.toString();
+    var output = numberStr.repeat(i);
+    console.log(output);
+
+}
+
+
+ */
+
+
 //Exercise number 4
 
 // for (var i = 1; i <= 9; i++) {
