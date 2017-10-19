@@ -15,7 +15,7 @@
      * array.
      */
 
-    console.log(names);
+    console.log(names.length);
 
     /**
      * TODO:
@@ -45,9 +45,9 @@
      * Refactor your above code to use a `forEach` loop
      */
 
-    names.forEach(function(names) {
+    names.forEach(function(element) {
 
-        console.log(names);
+        console.log(element);
 
     });
 
@@ -67,24 +67,28 @@
      */
 
 
-    function arrayOne(input) {
+    function arrayOne(arr) {
 
-        return input[0];
+        return arr[0];
+
+    }
+    console.log(arrayOne([1,2,3,4,5]));
+
+    function arrayTwo(arr) {
+
+        return arr[1];
 
     }
 
-    function arrayTwo(input) {
+    console.log(arrayTwo([1,2,3,4,5]));
 
-        return input[1];
 
-    }
+    function arrayThree(arr) {
 
-    function arrayThree(input) {
-
-        return input[5];
-
+        return arr[4];
 
     }
+    console.log(arrayThree([1,2,3,4,5]));
 
 
 })();
