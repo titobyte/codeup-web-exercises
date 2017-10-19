@@ -77,7 +77,7 @@ for(var i = 1; i <= 9; i += 1) {
 
 // Exercise number 5
 
-// for (var i = 100; i >= 5; i = i -5) {
+// for (var i = 100; i >= 5; i = i - 5) {
 //     console.log(i);
 // }
 //
