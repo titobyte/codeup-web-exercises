@@ -67,7 +67,24 @@
      */
 
 
+    function arrayOne(input) {
 
+        return input[0];
+
+    }
+
+    function arrayTwo(input) {
+
+        return input[1];
+
+    }
+
+    function arrayThree(input) {
+
+        return input[5];
+
+
+    }
 
 
 })();
