@@ -85,7 +85,7 @@
 
     function arrayThree(arr) {
 
-        return arr[4];
+        return arr[arr.length -1];
 
     }
     console.log(arrayThree([1,2,3,4,5]));
