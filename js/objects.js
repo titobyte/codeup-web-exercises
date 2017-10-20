@@ -61,25 +61,27 @@
     ];
 
 
+
+
+
     shoppers.forEach(function(shopper) {
 
-           if (shoppers[0]) {
-               console.log("Cameron");
-               console.log("Amount before discount is $180");
-               console.log("Amount after discount is $180");
+        //display the name of the shopper and the original amount before discount
+        // if they spend more than 200 dollars, apply discount, saying we've applied discount
+        // display price after discount
 
-           } else if (shoppers[1]) {
+        console.log(shopper.name + " " + shopper.amount);
 
-                console.log("Ryan");
-                console.log("Amount before discount is $250");
-                console.log("Amount after discount is $220");
+        if (shopper.amount > 200) {
 
-           } else if (shoppers[2]) {
+            var discount = shopper.amount * .12;
+            shopper.amount = shopper.amount - discount;
+            console.log(discount);
 
-               console.log("George");
-               console.log("Amount before discount is $320");
-               console.log("Amount after discount is $320");
-           }
+        }
+
+        console.log("Price after discount " + shopper.amount);
+
     });
 
 
