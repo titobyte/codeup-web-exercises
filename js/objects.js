@@ -148,9 +148,9 @@
     ];
 
 
-    console.log(books[0].title);
-    console.log(books[0].author.firstName);
-    console.log(books[0].author.lastName);
+    // console.log(books[0].title);
+    // console.log(books[0].author.firstName);
+    // console.log(books[0].author.lastName);
 
 
     /**
@@ -179,8 +179,11 @@
      */
 
 
-    books.forEach(function(book) {
-
+    books.forEach(function(element,index,array) {
+        console.log("book: " + (1+ index));
+        console.log("title: "+ element.title);
+        console.log("author: " + element.author.firstName + " " + element.author.lastName);
+        console.log("---")
 
 
     });
