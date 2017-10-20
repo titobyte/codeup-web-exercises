@@ -14,8 +14,8 @@
 
     var person = {
 
-        firstName: "Rick",
-        LastName: "Sanchez"
+        firstName: "Tito",
+        lastName: "Valiente"
 
     };
 
@@ -31,6 +31,15 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
+    person.sayHello = function () {
+
+        return "Hello " + "from "+ this.firstName + " " + this.lastName;
+
+    };
+
+
+    console.log(person.sayHello());
+
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -45,11 +54,35 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180}, //$180
+        {name: 'Ryan', amount: 250}, //$220.00
+        {name: 'George', amount: 320} //$281.60
+    ];
+
+
+    shoppers.forEach(function(shopper) {
+
+           if (shoppers[0]) {
+               console.log("Cameron");
+               console.log("Amount before discount is $180");
+               console.log("Amount after discount is $180");
+
+           } else if (shoppers[1]) {
+
+                console.log("Ryan");
+                console.log("Amount before discount is $250");
+                console.log("Amount after discount is $220");
+
+           } else if (shoppers[2]) {
+
+               console.log("George");
+               console.log("Amount before discount is $320");
+               console.log("Amount after discount is $320");
+           }
+    });
+
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -63,6 +96,62 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+
+    var books = [
+        {
+            title: "The Rooster Bar",
+            author: {
+                firstName: "John",
+                lastName: "Grisham"
+
+            }
+
+        },
+        {
+            title: "IT",
+            author: {
+                firstName: "Stephen",
+                lastName: "King"
+
+            }
+
+        },
+        {
+            title: "The Glass Castle",
+            author: {
+                firstName: "Jeannette",
+                lastName: "Walls"
+
+            }
+
+        },
+        {
+            title: "On Tyranny",
+            author: {
+                firstName: "Timothy",
+                lastName: "Snyder"
+
+            }
+
+        },
+        {
+            title: "Manhattan Beach",
+            author: {
+                firstName: "Jennifer",
+                lastName: "Egan"
+
+            }
+
+        }
+
+    ];
+
+
+    console.log(books[0].title);
+    console.log(books[0].author.firstName);
+    console.log(books[0].author.lastName);
+
 
     /**
      * TODO:
@@ -88,6 +177,14 @@
      *      ---
      *      ...
      */
+
+
+    books.forEach(function(book) {
+
+
+
+    });
+
 
     /**
      * Bonus:
