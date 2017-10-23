@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM: Query and Modify</title>
+</head>
+<body>
+<form name="login">
+    <div>
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password">
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+<script>
+    "use strict";
+    (function() {
+        // get the "username" input
+        var usernameInput = document.forms.login.username;
+
+        // log the value of the "username" input
+        console.log(usernameInput.value);
+
+    })();
+</script>
+</body>
+</html>
