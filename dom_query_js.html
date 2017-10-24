@@ -14,6 +14,12 @@
     <li data-dbid="4">Item 4</li>
     <li data-dbid="5">Item 5</li>
 </ul>
+
+<button id="btn1">This is button 1</button>
+<button id="btn2">This is button 2</button>
+<button id="btn3">This is button 3</button>
+<button id="btn4">This is button 4</button>
+
 <h2 id="sub-header">Hello Again.</h2>
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -61,8 +67,23 @@
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         subParagraphs.innerHTML = "Mission Accomplished!";
-    })();
 
+
+        //btn1 event listener
+        var btnOne = document.getElementById('btn1');
+
+        btnOne.addEventListener("click", function () {
+           console.log("test")
+        });
+
+
+        //btn2 event listener
+        var btnTwo = document.getElementById('btn2');
+
+        btnTwo.addEventListener()
+
+
+    })();
 </script>
 </body>
 </html>
