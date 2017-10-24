@@ -73,14 +73,30 @@
         var btnOne = document.getElementById('btn1');
 
         btnOne.addEventListener("click", function () {
-           console.log("test")
+           alert("Hello!");
         });
 
 
         //btn2 event listener
         var btnTwo = document.getElementById('btn2');
 
-        btnTwo.addEventListener()
+        btnTwo.addEventListener("mouseover", function () {
+            alert('Hey! Stop mousing over me!');
+        });
+
+        //btn3 event listener
+        var btnThree = document.getElementById('btn3');
+
+        btnThree.addEventListener("dblclick", function () {
+           alert('Hey! Do not double click me!');
+        });
+
+        //btn4 event listener
+        var btnFour = document.getElementById("btn4");
+
+        btnFour.addEventListener("mouseleave", function () {
+           alert("Wait do not leave me!");
+        });
 
 
     })();
