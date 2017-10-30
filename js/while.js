@@ -11,7 +11,7 @@ function basicWhileLoop() {
     }
 }
 
-// console.log(basicWhileLoop());
+console.log(basicWhileLoop());
 
 
 // // Ice cream loop
