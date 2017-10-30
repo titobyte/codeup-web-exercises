@@ -1,5 +1,9 @@
 $(document).ready(function(){
 "use strict";
 
-$('.codeup').css('border', '1px solid red');
+$('li').css('font-size', '20px');
+
+    var alertHeaderContents = $('h1').html();
+    alert(alertHeaderContents);
+
 });
