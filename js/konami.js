@@ -9,9 +9,10 @@ $(document).ready(function () {
         kkeys.push( e.keyCode );
 
         if ( kkeys.toString().indexOf( konami ) >= 0 ) {
-            
-            // do something awesome
+
             alert('You have added 30 lives!')
+            alert('Here comes your lives')
+            $('body').html('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 
         }
 
