@@ -13,7 +13,7 @@ $(document).ready(function () {
     //Effects Exercises
     // # 1
     $('#toggleHeader').click(function () {
-       $('#toggleHeader').parent().hide();
+       $('span').parent().hide();
 
     });
 
