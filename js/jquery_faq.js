@@ -12,8 +12,8 @@ $(document).ready(function () {
 
     //Effects Exercises
     // # 1
-    $('#toggleHeader').click(function () {
-       $('span').parent().hide();
+    $('span').click(function () {
+       $(this).parent().hide();
 
     });
 
