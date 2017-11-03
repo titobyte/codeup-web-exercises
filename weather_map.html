@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Night Mode Weather Map</title>
+    <link rel="stylesheet" href="./css/weather.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Night Mode Weather App</h1>
+
+        <div class="weatherbox">
+
+        </div>
+
+        <div class="weatherbox">
+
+
+        </div>
+
+        <div class="weatherbox">
+
+        </div>
+
+    </div>
+
+<script src="./js/jquery-2.2.4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+      "use strict";
+
+        $.get("http://api.openweathermap.org/data/2.5/weather", {
+            APPID: "a0b7a8117a862864342c0ff34fd3af9b",
+            q:     "San Antonio, Tx",
+            units: "imperial"
+        }).done(function(data) {
+            console.log(data);
+        });
+
+
+
+
+
+    });
+</script>
+</body>
+</html>
