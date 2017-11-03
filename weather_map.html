@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Night Mode Weather Map</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/weather.css">
 </head>
 <body>
@@ -11,37 +13,57 @@
 
         <h1>Night Mode Weather App</h1>
 
-        <div class="weatherbox">
+        <div class="row">
 
         </div>
 
-        <div class="weatherbox">
-
-
-        </div>
-
-        <div class="weatherbox">
-
-        </div>
 
     </div>
-
 <script src="./js/jquery-2.2.4.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
       "use strict";
 
-        $.get("http://api.openweathermap.org/data/2.5/weather", {
-            APPID: "a0b7a8117a862864342c0ff34fd3af9b",
-            q:     "San Antonio, Tx",
-            units: "imperial"
-        }).done(function(data) {
-            console.log(data);
-        });
+     function loadweather() {
+         $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+             APPID: "7f8e3aa0aad113510e0c1eaafd1c17b8",
+             cnt:'3',
+             q:     "San Antonio, Tx",
+             units: "imperial"
+         }).done(function(data) {
+             console.log(data);
+             weatherData(data.list);
+         })
+             .fail(function(status) {
+                 console.log(status + " request failed");
+             });
+     }
 
 
+        function weatherData(data) {
 
+            var weather = "";
+
+            data.forEach(function (data) {
+
+                weather += "<div class='weatherbox col-md-3'>";
+                weather += "<p>" + "<strong>"+ "Temp : " + "</strong>" + data.temp.max + " / "+ data.temp.min + "</p>";
+                weather += "<p>" + "<strong>"+ "Clouds : " + "</strong>" + data.clouds + "</p>";
+                weather += "<p>" + "<strong>"+ "Humidity : " + data.humidity +"</strong>" + "</p>";
+                weather += "<p>" + "<strong>"+ "Pressure : " + data.pressure + "</strong>"+"</p>";
+                weather += "<p>" + "<strong>"+ "Wind : " + data.speed +"</strong>" + "</p>";
+                weather += "</div>";
+
+
+            });
+
+            $('.row').html(weather);
+        }
+
+        loadweather()
 
 
     });
