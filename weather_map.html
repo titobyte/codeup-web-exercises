@@ -49,9 +49,10 @@
 
             data.forEach(function (data) {
 
-                weather += "<div class='weatherbox col-md-3'>";
+                weather += "<div class='weatherbox col-md-4'>";
                 weather += "<p>" + "<strong>"+ "Temp : " + "</strong>" + data.temp.max + " / "+ data.temp.min + "</p>";
-                weather += "<p>" + "<strong>"+ "Clouds : " + "</strong>" + data.clouds + "</p>";
+                weather += "<p>" + "<strong>"+ "Clouds : "+ "</strong>"+" ";
+                weather +=  data.weather[0].description +"</p>";
                 weather += "<p>" + "<strong>"+ "Humidity : " + data.humidity +"</strong>" + "</p>";
                 weather += "<p>" + "<strong>"+ "Pressure : " + data.pressure + "</strong>"+"</p>";
                 weather += "<p>" + "<strong>"+ "Wind : " + data.speed +"</strong>" + "</p>";
