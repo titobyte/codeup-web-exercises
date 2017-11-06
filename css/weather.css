@@ -6,7 +6,7 @@ html *:before,
 html *:after { box-sizing: inherit; }
 
 body {
-    max-width: 42em;
+
     padding: 2em;
     color: #161616;
     font-family: 'Roboto', sans-serif;
@@ -19,6 +19,7 @@ h1 {
     font-weight: 100;
     font-size: 2em;
     text-transform: uppercase;
+    text-align: center;
 }
 
 p {
@@ -28,3 +29,23 @@ p {
 
 }
 
+/* Helpers */
+
+.no-bottom {
+    margin-bottom:0;
+}
+.bottom {
+    margin-bottom: 15px;
+}
+
+.weather-style {
+    font-size: 3em;
+}
+
+/* Google Maps */
+#map-canvas {
+    width: 770px;
+    height: 481px;
+    padding: 25px;
+    margin: 20px auto;
+}
